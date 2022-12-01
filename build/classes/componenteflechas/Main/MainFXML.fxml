@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="componenteflechas.Main.MainFXMLController">
+   <children>
+      <BorderPane prefHeight="500.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <Pane prefHeight="345.0" prefWidth="75.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="txtLeft" alignment="CENTER" layoutX="-221.0" layoutY="128.0" prefHeight="95.0" prefWidth="500.0" rotate="-90.0" style="-fx-background-color: none;" text="W" visible="false">
+                     <font>
+                        <Font name="System Bold" size="50.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+         </left>
+         <top>
+            <Pane prefHeight="75.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="txtUp" alignment="CENTER" layoutY="-10.0" prefHeight="95.0" prefWidth="500.0" style="-fx-background-color: none;" text="N" visible="false">
+                     <font>
+                        <Font name="System Bold" size="50.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+         </top>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnUp" layoutX="138.0" layoutY="40.0" mnemonicParsing="false" onAction="#btnUpOnAction" prefHeight="75.0" prefWidth="75.0" />
+                  <Button fx:id="btnRight" layoutX="235.0" layoutY="138.0" mnemonicParsing="false" onAction="#btnRightOnAction" prefHeight="75.0" prefWidth="75.0" />
+                  <Button fx:id="btnDown" layoutX="138.0" layoutY="235.0" mnemonicParsing="false" onAction="#btnDownOnAction" prefHeight="75.0" prefWidth="75.0" />
+                  <Button fx:id="btnLeft" layoutX="40.0" layoutY="138.0" mnemonicParsing="false" onAction="#btnLeftOnAction" prefHeight="75.0" prefWidth="75.0" />
+               </children>
+            </Pane>
+         </center>
+         <right>
+            <Pane prefHeight="75.0" prefWidth="75.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="txtRight" alignment="CENTER" layoutX="-212.0" layoutY="128.0" prefHeight="95.0" prefWidth="500.0" rotate="90.0" style="-fx-background-color: none;" text="E" visible="false">
+                     <font>
+                        <Font name="System Bold" size="50.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+         </right>
+         <bottom>
+            <Pane prefHeight="75.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="txtDown" alignment="CENTER" layoutY="-10.0" prefHeight="95.0" prefWidth="500.0" style="-fx-background-color: none;" text="S" visible="false">
+                     <font>
+                        <Font name="System Bold" size="50.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
